@@ -17,12 +17,18 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    );
+  color:white
+}
+
+header {
+  position: fixed; /* Fixa o header no topo da página */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white; /* Cor de fundo do header */
+  z-index: 1000; /* Z-index alto para sobrepor outros elementos */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para o header */
+  padding: 10px 20px; /* Espaçamento interno do header */
 }
 
 @layer utilities {
